@@ -1,0 +1,88 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+/* Katalog produk */
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    
+}
+
+.product {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px;
+    text-align: center;
+}
+
+.product p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px;
+}
+
+.product p.price {
+    font-size: 16px;
+    color: #4CAF50;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Tombol untuk pemesanan */
+.product .btn {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 15px;
+    color: #121111;
+    background: grey;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.product .btn:hover {
+    background: #45a049;
+}
+
